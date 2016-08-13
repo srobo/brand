@@ -1,0 +1,17 @@
+{
+  "name": "Brand",
+  "authors": [
+    "Jimmy Thompson <jimmy@jimmythompson.co.uk>"
+  ],
+  "description": "The Student Robotics brand",
+  "license": "TBC",
+  "homepage": "https://studentrobotics.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
