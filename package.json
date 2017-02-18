@@ -1,0 +1,19 @@
+{
+  "name": "brand",
+  "version": "0.0.1",
+  "description": "The Student Robotics brand",
+  "main": ".",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srobo/brand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srobo/brand/issues"
+  },
+  "homepage": "https://github.com/srobo/brand#readme"
+}
