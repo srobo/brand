@@ -1,11 +1,14 @@
 .form {
-  input {
-    &[type='email'], &[type='text'] {
-      border: 1px solid $sr-dark-grey;
-      border-radius: 3px;
-      font-size: $charlie;
-      padding: 12px;
-    }
+
+  input[type='email'], input[type='text'], select {
+    border: 1px solid $sr-dark-grey;
+    border-radius: 3px;
+    font-size: $charlie;
+    padding: 12px;
+    background: white;
+  }
+
+  input, select {
 
     &[type='submit'] {
       margin-right: 0;
@@ -38,7 +41,7 @@
   }
 }
 
-input.full-width {
+input.full-width, select.full-width {
   width: 100%;
 }
 
