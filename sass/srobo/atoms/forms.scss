@@ -1,6 +1,8 @@
 .form {
-
-  input[type='email'], input[type='text'], select {
+  input[type="email"],
+  input[type="text"],
+  select,
+  textarea {
     border: 1px solid $sr-dark-grey;
     border-radius: 3px;
     font-size: $charlie;
@@ -8,9 +10,10 @@
     background: white;
   }
 
-  input, select {
-
-    &[type='submit'] {
+  input,
+  select,
+  textarea {
+    &[type="submit"] {
       margin-right: 0;
     }
 
@@ -24,7 +27,7 @@
 
     @include media-query(medium) {
       width: auto;
-    };
+    }
   }
 
   label {
@@ -41,8 +44,14 @@
   }
 }
 
-input.full-width, select.full-width {
+input.full-width,
+select.full-width,
+textarea.full-width {
   width: 100%;
+}
+
+textarea {
+  font-family: $main-font-family;
 }
 
 .show-labels {
@@ -51,6 +60,5 @@ input.full-width, select.full-width {
     font-weight: bold;
     margin-bottom: ($spacing / 2);
     text-align: left;
-
   }
 }
