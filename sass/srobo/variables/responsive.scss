@@ -12,16 +12,26 @@ $breakpoints: (
   }
 }
 
-.desktop-only {
-  display: none;
+@mixin desktop-only {
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    @content;
+  }
+}
 
-  @include media-query(medium) {
-    display: inline;
+@mixin mobile-only {
+  @media (max-width: #{map-get($breakpoints, medium)}) {
+    @content;
+  }
+}
+
+.desktop-only {
+  @include mobile-only {
+    display: none;
   }
 }
 
 .mobile-only {
-  @include media-query(medium) {
+  @include desktop-only {
     display: none;
   }
 }
